@@ -1,4 +1,3 @@
-
 int slidingWindow(vector<int> & nums, int firstLen, int secondLen)
 {
         int n = nums.size();
