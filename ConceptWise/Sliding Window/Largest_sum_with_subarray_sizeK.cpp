@@ -26,6 +26,8 @@ ANSWER = 22
 
 // fixed size sliding window problem
 
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -45,42 +47,35 @@ int main()
 			cin >> arr[i];
 		}
 
+
+		int ans = 0;
+		int sum = 0;
 		int i=0;
 		int j=0;
-		int ans = 0;
-		long long sum = 0;
 		while(j < n)
 		{
 			sum += arr[j];
-			if(sum < k)
+			if(j-i+1 < k)
 			{
 				j++;
 			}
-			else if(sum == k)
+			else if(j-i+1 == k)
 			{
-				int len = j - i + 1;
-				ans = max(ans, len);
+				ans = max(ans, sum);
+				sum -= arr[j];
+				i++;
 				j++;
+
+				// cout << i << " " << j << endl;
 			}
-			else if(sum > k)
-			{
-				// cout << i << j << " : " << sum << endl;
-				while(sum > k)
-				{
-					sum -= arr[i];
-					i++;
-					if(sum == k)
-					{
-						ans = max(ans, j-i+1);
-						break;
-					}
-					
-				}
-				j++;
-			}
+
 		}
 
 		cout << ans << endl;
+
+
+
+
 
 	}
 
