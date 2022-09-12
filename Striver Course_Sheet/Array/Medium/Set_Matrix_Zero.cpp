@@ -98,9 +98,13 @@ void setZeros2(vector<vector<int> > & mat)
 
 void setZeros3(vector<vector<int> > & matrix)
 {
-	int n = matrix.size();
+    int n = matrix.size();
     int m = matrix[0].size();
+	
+    // for first element of first row
     bool firstRow = false;
+	
+    // for first element of first column
     bool firstCol = false;
 
     for(int i=0; i<n; i++)
