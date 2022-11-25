@@ -12,7 +12,7 @@ int findFloor(vector<long long> v, long long n, long long x){
             {
                 ans = mid;
                 break;
-            }
+            } 
             else if(v[mid] > x)
             {
                 high = mid - 1;
