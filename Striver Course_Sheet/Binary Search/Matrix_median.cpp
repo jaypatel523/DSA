@@ -47,7 +47,7 @@ Constraints:
 
 
 
-class Solution{   
+class Solution{    
 public:
 
     int median(vector<vector<int>> &matrix, int R, int C){
