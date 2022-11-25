@@ -25,3 +25,4 @@ int ceil(int arr[], int n, int x)
     
     return ans;
 }
+ 
