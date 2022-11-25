@@ -15,7 +15,7 @@ M = [[1, 3, 5],
      [3, 6, 9]]
 Output: 5
 Explanation: Sorting matrix elements gives 
-us {1,2,3,3,5,6,6,9,9}. Hence, 5 is median. 
+us {1,2,3,3,5,6,6,9,9}. Hence, 5 is median.   
  
 
 Example 2:
