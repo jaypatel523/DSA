@@ -48,7 +48,6 @@ vector<int> rightView(Node * root) {
 	queue<Node *> q;
 	int level = 0;
 	q.push(root);
-	// level, last element at every level
 	map<int, int> m;
 
 	while(!q.empty()) {
